@@ -1,16 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Rannarin's Diary</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Diary ♡</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Georgia, serif;
+            background: #eef5e9;
+            color: #3f5140;
+            overflow-x: hidden;
+        }
+
+        /* Decorative flowers */
+        .flower {
+            position: fixed;
+            font-size: 35px;
+            opacity: 0.7;
+            z-index: 0;
+        }
+
+        .flower.one {
+            top: 30px;
+            left: 35px;
+        }
+
+        .flower.two {
+            bottom: 35px;
+            right: 40px;
+        }
+
+        .flower.three {
+            top: 45%;
+            right: 25px;
+        }
+
+        /* Main homepage */
+        .home {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+        }
+
+        .content {
+            max-width: 700px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .small-title {
+            font-size: 18px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            opacity: 0.75;
+        }
+
+        h1 {
+            font-size: 70px;
+            margin: 0;
+            letter-spacing: 6px;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+
+        .start-button {
+            margin-top: 35px;
+            padding: 15px 45px;
+            border: 2px solid #718b70;
+            border-radius: 40px;
+            background: #ffffff;
+            color: #3f5140;
+            font-size: 18px;
+            font-family: Georgia, serif;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .start-button:hover {
+            transform: translateY(-4px);
+            background: #dfead9;
+            box-shadow: 0 8px 20px rgba(70, 90, 70, 0.15);
+        }
+
+        .note {
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.65;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>🌷 My Diary 🌷</h1>
+    <div class="flower one">🌿</div>
+    <div class="flower two">🌷</div>
+    <div class="flower three">✿</div>
 
-    <p>Welcome to my little corner of the internet ♡</p>
+    <main class="home">
 
-    <button>START</button>
+        <div class="content">
+
+            <div class="small-title">
+                welcome to
+            </div>
+
+            <h1>My Diary ♡</h1>
+
+            <p class="subtitle">
+                A little corner of my world,
+                filled with art, music, memories,
+                creations and things I love.
+            </p>
+
+            <button class="start-button" onclick="startWebsite()">
+                ✨ START ✨
+            </button>
+
+            <div class="note">
+                made with little pieces of my world ♡
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+        function startWebsite() {
+            alert("Welcome to My Diary! 🌷");
+        }
+    </script>
 
 </body>
 </html>
